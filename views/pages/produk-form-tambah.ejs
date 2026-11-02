@@ -1,0 +1,31 @@
+<%- include('../partials/header', { pageTitle: pageTitle }) %>
+<div class="card" style="max-width: 600px; margin: 1.5rem auto;">
+  <h2>Formulir Entri Produk Baru</h2>
+  <form action="/produk/tambah" method="POST">
+    <div style="margin-bottom: 1rem;">
+      <label for="nama_produk">Nama Produk:</label><br>
+      <input type="text" id="nama_produk" name="nama_produk" required style="width: 100%; padding: 0.5rem;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label for="kategori">Kategori:</label><br>
+      <select id="kategori" name="kategori" required style="width: 100%; padding: 0.5rem;">
+        <option value="">-- Pilih Kategori --</option>
+        <option value="Periferal">Periferal</option>
+        <option value="Display">Display</option>
+        <option value="Komponen Komputer">Komponen Komputer</option>
+        <option value="Jaringan">Jaringan</option>
+      </select>
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label for="harga">Harga (Rp):</label><br>
+      <input type="number" id="harga" name="harga" min="1000" step="500" required style="width: 100%; padding: 0.5rem;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label for="stok">Jumlah Stok:</label><br>
+      <input type="number" id="stok" name="stok" min="0" required style="width: 100%; padding: 0.5rem;">
+    </div>
+    <button type="submit" class="btn btn--primary" style="padding: 0.6rem 1.2rem; background: #0284c7; color: white; border: none; border-radius: 4px; cursor: pointer;">Simpan ke Basis Data</button>
+    <a href="/produk" style="margin-left: 1rem; color: #64748b;">Batal</a>
+  </form>
+</div>
+<%- include('../partials/footer') %>
