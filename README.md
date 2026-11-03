@@ -1,8 +1,10 @@
 # Praktikum 3 - Express + MySQL (Guided Lab)
 
-**Mata Kuliah:** Pemrograman Web (MK11)
-**Modul:** Praktikum 3 - Rekayasa Sistem Basis Data: Persistensi MySQL, Connection Pooling, Prepared Statements, dan Arsitektur CRUD Aman
-**Nama / NIM / Kelas:** I Wayan Yoga Karang Saputra / 42530013 / Pagi - Teknologi Informasi
+- **Mata Kuliah:** Pemrograman Web (MK11)
+- **Modul:** Praktikum 3 - Rekayasa Sistem Basis Data: Persistensi MySQL, Connection Pooling, Prepared Statements, dan Arsitektur CRUD Aman
+- **Nama:** I Wayan Yoga Karang Saputra
+- **NIM:** 42530013
+- **Kelas:** Pagi - Teknologi Informasi
 
 Aplikasi web monolith (Server-Side Rendering) berbasis **Node.js, Express, dan EJS** yang terhubung ke **MySQL** menggunakan **connection pool** (`mysql2/promise`). Studi kasusnya adalah master data **produk** dengan operasi CRUD penuh.
 
